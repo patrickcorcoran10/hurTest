@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col-auto">
+    <h2>Welcome, {{name}}!</h2>
+  </div>
+</div>
+<br>
+<div>
+    <button type="submit"><a href="/newpost" class="new-btn">New Post</a></button>
+</div>
+<br>
+<br>
+
+<h3>Current Posts:</h3>
+
+<div class="col-md-6 post-list">
+    {{#each posts as |post|}}
+    <div class="row mb-2">
+        <div class="col-md-8">
+        <h4><a href="/editpost/{{post.id}}">{{post.title}}</a></h4>
+        </div>
+        <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" type="click" data-id="{{post.id}}">DELETE</button>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+<h3>Comments:</h3>
+
+<div class="col-md-6 post-list">
+    {{#each posts as |post|}}
+    <div class="row mb-2">
+        <div class="col-md-8">
+        <h4><a href="/editpost/{{post.id}}">{{post.title}}</a></h4>
+        </div>
+        <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" type="click" data-id="{{post.id}}">DELETE</button>
+        </div>
+    </div>
+    {{/each}}
+</div>
+<script src="./js/dashboard.js"></script>

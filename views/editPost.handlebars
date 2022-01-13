@@ -1,0 +1,21 @@
+<form class="edit-post-form">
+    <h2>Edit your post:</h2>
+    <br>
+    <div class="form-group">
+        <label for="post-title">Post Title:</label>
+        <input id="post-title" type="text" class="form-input" value="{{post.title}}" />
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="post-text">Post Text:</label>
+        <textarea id="post-text" type="text" class="form-input">{{post.text}}</textarea>
+    </div>
+    <br>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Save Post</button>
+    </div>
+</form>
+
+<p hidden id="postId">{{post.id}}</p>
+
+<script src="/js/editpost.js"></script>

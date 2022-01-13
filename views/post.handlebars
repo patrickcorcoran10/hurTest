@@ -1,0 +1,17 @@
+<div class="text-center">
+  <h2>{{title}}</h2>
+  <p>{{text}}</p>
+  <h5>Created by {{user.name}} on {{date_created}}</h5>
+  <br>
+  <div>
+      <h6>Comments:</h6>
+      <br>
+      {{#each comments as |comment|}}
+      <p>
+          {{comment.text}}
+      </p>
+      <h6>Comment by: {{comment.user.name}}</h6>
+      <br>
+      {{/each}}
+  </div>
+</div>

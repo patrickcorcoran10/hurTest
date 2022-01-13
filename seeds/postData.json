@@ -1,0 +1,17 @@
+[
+    {
+        "title": "My First Tech Blog",
+        "text": "I always wanted to blog about tech. Now I can!",
+        "user_id": 1
+    },
+    {
+        "title": "What is a Tech Blog?",
+        "text": "You ever ask yourself that? Well... I want to show you.",
+        "user_id": 2
+    },
+    {
+        "title": "I Love Tech and Puppies!",
+        "text": "I don't know anything about tech, but I sure do love puppies!",
+        "user_id": 3
+    }
+]
